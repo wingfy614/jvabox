@@ -1,0 +1,58 @@
+/* by francis */
+*{
+  font-family: 'Noto Sans TC', 微軟正黑體, sans-serif;
+}
+
+h2, h3, h5{
+  font-weight: 700;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #ff4c4c;
+    border-color: #ff4c4c;
+}
+
+.btn-primary{
+    color: #fff;
+    background-color: #CC0018;
+    border-color: #CC0018;
+}
+
+.container{
+  border: 5px #ff4c4c solid;
+  margin-top:10px;
+}
+.site-title{
+  text-align: left;
+  margin-top:10px;
+}
+
+.main{
+  margin-top:0;
+}
+
+input.parsley-success, select.parsley-success, textarea.parsley-success {
+    color: #555;
+    background-color: #FFEFEF;
+    border: 1px solid #FFEFEF;
+}
+.zip-group {
+    display: inline;
+    width: 32.7%;
+}
+.fee-group p {
+    margin-bottom: 10px;
+}
+.btn-checkout {
+    font-size: 14px;
+}
+
+/* thankyou.php */
+td{
+  font-size: 14px;
+}
+
+table{
+  padding: 0 35px;
+}

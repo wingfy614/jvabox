@@ -1,0 +1,334 @@
+html, body {
+    height: 100%;
+    /*text-shadow: 0px 0px 1px #909090 !important;*/
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main {
+    background-color: #ffffff;
+    padding: 30px;
+    margin-top: 0.8em;
+}
+
+.container{
+    border: solid 1px #dddddd;
+    height: 100%;
+    margin-top:50px;
+}
+
+.youtube{
+    width: 100%;
+    height: 545px;
+}
+.navbar-inverse .navbar-toggle .icon-bar {background-color: #92bf3e;}
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+    background-color: #009944; color: #ffffff;
+}
+.navbar-inverse .navbar-brand:hover { color: #92bf3e }
+
+h2 {
+    margin: 0;
+    letter-spacing: normal;
+    font: normal normal normal 22px/1.1em Signika,sans-serif;
+    color: #00CCFF;
+    display: block;
+    -webkit-margin-before: 0.43em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+h6 {
+    margin: 0;
+    letter-spacing: normal;
+    font: normal normal normal 18px/1.3em 'Open Sans',sans-serif;
+    color: #7F7F7F;
+    display: block;
+    -webkit-margin-before: 0.33em;
+    -webkit-margin-after: 1.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+span {
+    font-family:メイリオ,meiryo,ヒラギノ角ゴ pro w3,hiragino kaku gothic pro,sans-serif;
+}
+
+
+video {
+    width: 100%    !important;
+    height: auto   !important;
+}
+
+
+.navbar {border: 0px solid transparent;}
+.navbar-inverse { background:none; border-color: #fdfdfd;}
+.navbar-inverse .navbar-nav>li>a{ color:#7F7F7F; }
+.navbar-nav li:hover {background-color:rgba(255, 187, 0, 1); color:#FFFFFF;  transition: background-color 0.4s ease 0s;}
+.navbar-inverse .navbar-nav>.active>a {color:#ffffff;background-color:rgba(0, 204, 255, 1);transition: background-color 0.4s ease 0s;}
+.navbar-inverse .navbar-nav>.active>a:hover {color:#ffffff;background-color:rgba(0, 204, 255, 1);transition: background-color 0.4s ease 0s;}
+
+
+@media screen and (min-width: 768px) {
+
+    .navbar-brand-text{display: none;}
+    .navbar-margin-top {margin-top:75px;}
+    .navbar-logo {width: 200px;margin-top: -85px;margin-left: 0%; margin-bottom: 15px}
+    .navbar-margin {margin-top: 75px;}
+    .content-margin {margin-top: 25px;}
+
+    .navbar-nav{ margin-left: 5%}
+
+    .level_1{margin-top: 20%;margin-right: 35% }
+    .level_2{margin-right: 30%}
+    .mini{ width: 30px; margin-right:1%}
+    .slogan {
+        margin-top: 80px;
+        text-align: right;
+        font-size: 24px; line-height: 1em;
+        font-family: メイリオ, meiryo, 'ヒラギノ角ゴ pro w3', 'hiragino kaku gothic pro', sans-serif;
+        color: black;
+    }
+    .slogan_comment{
+        text-align: right;
+        font: normal normal normal 1.2em Verdana,geneva,sans-serif;
+        color: #7F7F7F;
+    }
+    .sub_slogan{
+        text-align: right;
+        color: black;
+        font-family: verdana, geneva, sans-serif; font-size: 18px;
+    }
+
+
+}
+
+@media screen and (max-width: 990px) {
+    .navbar-brand-text{display: inline;}
+    .navbar-margin-top {margin-top:0px;}
+    .navbar-logo {width: 45px;margin-top: -5px;margin-left: 0%}
+    .navbar-margin {margin-top: 0px;}
+    .content-margin {margin-top: 5px;}
+    .navbar-nav{ margin-left: 0%}
+
+    .level_1{margin-top: 10%;margin-right: 35% }
+    .level_2{margin-right: 30%}
+    .mini{ width: 30px; margin-right:1%}
+    .sub_slogan{
+        text-align: right;
+        color: black;
+        font-family: verdana, geneva, sans-serif; font-size: 18px;
+    }
+    .slogan {
+        margin-top: 80px;
+        text-align: right;
+        font-size: 24px; line-height: 1em;
+        font-family: メイリオ, meiryo, 'ヒラギノ角ゴ pro w3', 'hiragino kaku gothic pro', sans-serif;
+        color: black;
+    }
+    .slogan_comment{
+        text-align: right;
+        font: normal normal normal 1.2em Verdana,geneva,sans-serif;
+        color: #7F7F7F;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .content-margin {margin-top: 55px;}
+    .navbar-brand-text{display: inline;}
+    .navbar-logo {width: 40px;margin-top: -5px}
+    .navbar-margin-top {
+        margin-top: 0px;
+        border-width: 0 0 1px;
+        position: fixed;
+        right: 0;
+        left: 0;
+        z-index: 1030;}
+
+
+    .level_1{margin-top: 15%;margin-right: 5% }
+    .level_2{margin-right: 0%}
+    .mini{ width: 30px; margin-right:1%}
+    .slogan {
+        margin-top: 30px;
+        text-align: right;
+        font-size: 20px; line-height: 1em;
+        font-family: メイリオ, meiryo, 'ヒラギノ角ゴ pro w3', 'hiragino kaku gothic pro', sans-serif;
+        color: black;
+    }
+    .sub_slogan{
+        text-align: right;
+        color: black;
+        font-family: verdana, geneva, sans-serif; font-size: 16px;
+    }
+    .slogan_comment{
+        display: none;
+        text-align: right;
+        font: normal normal normal 1.2em Verdana,geneva,sans-serif;
+        color: #7F7F7F;
+    }
+
+    .navbar-nav li { background-color: #d3e9d6;}
+
+    .navbar-inverse { background: #ffffff; }
+
+    .navbar-toggle { display: none;}
+}
+
+
+
+
+.btn_slogan{
+    text-align: right;
+}
+.btn_slogan a{
+    font-size: 15px;
+}
+
+.j_font{
+    font-size: 15px;
+}
+
+.shop_ori_price {
+    /*text-decoration:line-through;*/
+    color:gray;
+}
+
+.shop_price{
+    color:#cc2222;font-size: 24px;
+}
+.shop_discount{
+    color:gray;
+}
+
+.shop_btn{
+    margin-top: 5px;
+}
+
+.shop_number{
+    margin-top: 10px;
+    text-align: center;
+}
+.shop_checkout{
+    display: inline;width: 50px;text-align: center;
+}
+
+.real_checkout{
+    display: inline;width: 75px;text-align: center;
+}
+
+
+.contact_content {
+    margin-top: 40px;
+    line-height: 1.4em;
+    font-size: 1.2em;
+    color: #7F7F7F;font-style:italic;
+    font-family:Verdana,geneva,sans-serif;
+}
+
+.contact_address {
+    margin-top: 40px;
+    line-height: 1.4em;
+    font-size: 1em;
+    font-family:Verdana,geneva,sans-serif;
+}
+
+.contact_form_group div{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#go-to-checkout {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9999;
+    text-align: center;
+    line-height: 30px;
+    background: #f4f4f4;
+    color: #000;
+    cursor: pointer;
+    border-radius: 3px;
+
+    border: 1px dotted;
+    padding: 5px 8px;
+    text-decoration: none;
+    transition: opacity 0.2s ease-out;
+    border: 3px solid #2cc4ff;
+    background-color: white;
+    /* box-shadow: 0 0 10px rgba(0,0,0,0.4); */
+    font-size: 14px;
+    text-align: center;
+    color: #555;
+    border-radius: 10px;
+    padding: 14px;
+}
+
+
+
+#go-to-checkout:before{
+    content: "";
+    position: absolute;
+    border-right: 7px solid #2cc4ff;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    left: -18px;
+    top: 26px;
+    /* box-shadow: 0 0 10px rgba(0,0,0,0.4); */
+    width: 15px;
+    height: 15px;
+}
+#go-to-checkout:hover {
+    border-color: #62D3FF;
+}
+#go-to-checkout:hover:before{
+    border-right-color: #62d3ff;
+}
+
+#go-to-checkout.show {
+    opacity: 1;
+}
+
+
+
+.btn-checkout {
+    padding: 13px 0;
+    width: 100%;
+    font-size: 1.4em;
+}
+
+.item {
+    /*border-bottom: solid 1px #dddddd;*/
+    /*padding: 15px 0;*/
+}
+
+.btn-right{
+    margin-right: 15px;
+}
+
+.subtotal {
+    display:inline;
+}
+
+.hidden_cart{
+    display: none;
+}
+
+input { margin-bottom: 5px}
+
+.fa { font-size: 1.3em}
+
+.first-group {margin-top: 10px}
+
+.fee-group {text-align: right; padding-top: 5px}
+
+.zip-group { display: inline; width: 30%}
+
+.inline { display: inline;}
+
+.fa-2 { font-size: 2em}
+.fa-3 { font-size: 3em}
+
+.modal-md { width: 350px}
+
+#coupon_alert { padding: 5px}
+#coupon_success { padding: 5px}

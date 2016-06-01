@@ -1,0 +1,448 @@
+
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset=utf-8>
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta name=description content="">
+    <meta name=author content="">
+
+    <title>旅遊盒子</title>
+    <meta name="fb_admins_meta_tag" content=""/>
+
+    <link rel="shortcut icon" href="dist/images/logo.png" type="image/jpeg"/>    <link rel="apple-touch-icon" href="dist/images/logo.png" type="image/jpeg"/>
+    <link href="dist/css/checkout/bootstrap.min.css" rel="stylesheet">
+    <link href="dist/css/checkout/sb-admin-2.css" rel="stylesheet">
+    <link href="dist/css/checkout/font-awesome.min.css" rel="stylesheet">
+    <link href="dist/css/checkout/parsley.css" rel="stylesheet">
+    <link href="dist/css/checkout/customize.css" rel="stylesheet">
+    <link href="dist/css/checkout/new_customize.css?v=1" rel="stylesheet">
+    <link href="dist/css/checkout/francis.css" rel="stylesheet">
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
+    <!--[if lt IE 9]>
+    <script src="dist/js/checkout/html5shiv.min.js"></script>
+    <script src="dist/js/checkout/respond.min.js"></script>
+    <![endif]-->
+    <script src="dist/js/jquery.min.js"></script>
+</head>
+<body>
+<div id="foo" style="position:fixed; top:50%; left:50%; z-index:1;"></div>
+<div class="wrapper_one">
+    <div class="wrapper_two">
+        <div class="wrapper_three">
+            <img src="dist/images/logo-dark.png" id="mobile_logo">
+            <header id="masthead" class="site-header" role="banner">
+                <div class="site-branding">
+                    <h1 class="site-title">
+                        <a href="" rel="home">
+                            <img src="dist/images/logo-dark.png" style="width: 220px">
+                        </a>
+                    </h1>
+                    <h2 class="site-description"></h2>
+                </div>
+                <div id="hidd" style="float:right;"></div>
+            </header>
+            <div class="container" style="width:auto;">
+                <div class="row">
+                    <div class="item_image2 main">
+                        <div class="content-margin"></div>
+                        <div class="content-margin"></div>
+                        <h3>您選購的品項</h3>
+                        <form action="checkout" method="post" id="cart_form">
+                            <input type="hidden" name="cart_model_id[]" value="6">
+                            <input type="hidden" name="cart_product_id[]" value="7">
+                            <div class="row item" id="token_7">
+                                <div class="col-lg-2 col-xs-4 item_image">
+                                    <img src="admin/uploads/1.46458999993E+13_45318_34288.jpg" class="img-responsive img-product" style="height: 30%;width: 30%">
+                                </div>
+                                <div class="col-lg-4 col-xs-8 item_name">
+                                    <h4>
+                                        樂尼尼<br><span style='font-size: 0.9em'>顏色：紅</span><br><span style='font-size: 0.9em'>套餐：套餐一</span>                        </h4>
+                                </div>
+                            </div>
+                        </form>
+                        <form action="product/thank/you" method="post" accept-charset="utf-8" id="customer_form" data-parsley-validate="">            <h3 style="margin: 40px 0 20px 0">安全結帳</h3>
+                            <div class="row  first-group">
+                                <div class="col-lg-7">
+                                    <div class="form-group" style="display: none">
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="region_option" value="TW" checked id="region_taiwan" class="region_group">
+                                                台灣 Taiwan
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="region_option" value="AS" id="region_other_asia_country" class="region_group">
+                                                其他國家 Other countries
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group" id="twzipcode">
+                                        <i class="fa fa-thumb-tack"></i> 貨運地區 Shipping address<br>
+                                        <div data-role="county"
+                                             data-name="city"
+                                             data-value="台北市"
+                                             data-style="form-control zip-group zip-city" class="inline">
+                                        </div>
+                                        <div data-role="district"
+                                             data-name="state"
+                                             data-value="中正區"
+                                             data-style="form-control zip-group zip-state" class="inline">
+                                        </div>
+                                        <div data-role="zipcode"
+                                             data-name="zip"
+                                             data-value=""
+                                             data-style="form-control zip-group zip-code" class="inline">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <span id="address_label">收件人地址 Shipping street address</span>
+                                        <input type="text"
+                                               id="shipping_address"
+                                               name="shipping_address"
+                                               class="form-control"
+                                               data-parsley-trigger="change"
+                                               data-parsley-minlength="6"
+                                               data-parsley-error-message="請輸入最少6個字唷"
+                                               required
+                                               placeholder="街、路、號、樓"
+                                               value=""
+                                                >
+                                    </div>
+                                    <div class="form-group">
+                                        <i class="fa fa-check-circle"></i> 結帳方式 Payment
+                                        <select class="form-control" name="payment_option" id="payment_option">
+                                            <option value="2">轉帳付款</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group hidden" id="info_div">
+                                        <div class="alert alert-info">
+                                            <p>收款帳號 : 0462940039561</p>
+                                            <p>銀行代號 : 808 0462 (玉山銀行 內湖分行)</p>
+                                            <p>戶名 : 小蒜有限公司</p>
+                                            <p><img src="dist/images/card_sample.png"></p>
+                                            <p>請填局帳號後五碼</p>
+                                            <p>合作金庫較為特殊，請以交易明細上顯示的『交易帳號』或『轉出帳號』為準</p>
+                                        </div>
+                                    </div>
+                                    <div class="form-group" id="last5_div" style="display:none;">
+                                        <i class="fa fa-tag"></i> 轉帳帳號後五碼 Account last 5 number
+                                        <input id="last5_input"
+                                               type="text"
+                                               value="12345"
+                                               name="account_last_5"
+                                               class="form-control"
+                                               data-parsley-trigger="change"
+                                               data-parsley-minlength="5" data-parsley-maxlength="5" placeholder="例如：09561"
+                                               onblur="if($(this).val()=='39561')alert('請確認是否填成收款帳號了？')">
+                                    </div>
+                                    <div class="form-group" style="display: none">
+                                        <i class="fa fa-truck"></i> 運送方式 Shipping
+                                        <select class="form-control" name="shipping_option" id="shipping_option">
+                                            <option value='1'>一般配送 免費 (3~5天到貨)</option>
+                                            <option value='2'>優先出貨 (1~3天到貨) 酌收手續費 + TWD $30元</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <i class="fa fa-user"></i> 收件人姓名 Full name
+                                        <input type="text" class="form-control"
+                                               name="full_name"
+                                               id="full_name"
+                                               data-parsley-trigger="change"
+                                               data-parsley-pattern="^[^0-9]*[^0-9]$"
+                                               data-parsley-minlength="2"
+                                               data-parsley-error-message="請輸入中英文，不接受數字，最短2個字唷" required
+                                               value="">
+                                    </div>
+                                    <div class="form-group">
+                                        <i class="fa fa-phone"></i> 收件人手機 Phone number
+                                        <input type="text" class="form-control"
+                                               id="phone_number"
+                                               parsley-type="phone"
+                                               data-parsley-trigger="change"
+                                               name="phone_number"
+                                               data-parsley-minlength="10"
+                                               data-parsley-error-message="請輸入有效的電話號碼 (只接受10碼數字)"
+                                               required
+                                               value=""
+                                               placeholder="例如：0912345678">
+                                    </div>
+                                    <div class="form-group">
+                                        <i class="fa fa-envelope"></i> 電子信箱地址 E-mail address <span style="color:red">(請務必填寫正確喲)</span>
+                                        <input type="email" id="email" name="email" class="form-control" placeholder="我們會用這個Email發送出貨通知哦！"
+                                               data-parsley-trigger="change" required value="" onblur="
+                               if($(this).val().indexOf('yagoo')>0)alert('請確認是否把yahoo填成yagoo了呢?');
+                               if($(this).val().indexOf('tahoo')>0)alert('請確認是否把yahoo填成tahoo了呢?');
+                               if($(this).val().indexOf('gnail')>0)alert('請確認是否把gmail填成gnail了呢?');
+                               if($(this).val().indexOf('gmail.com.tw')>0)alert('請確認是否把gmail.com填成gmail.com.tw了呢?');
+                               if($(this).val().indexOf('gamil')>0)alert('請確認是否把gmail填成gamil了呢?')">
+                                    </div>
+                                    <div class="form-group" id="div-tos">
+                                        <input type="checkbox" name="tos" id="tos"required> 同意我們的<a href="tos/" target="_blank">「購物條款」</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-lg-offset-1 fee-group">
+                                    <h4 style="display: none" id="h4_coupon_discount">折扣：<span class="text-success" style="background-color: #DFF0D8;padding: 3px" id="coupon_discount">0</span></h4>
+                                    <h5>單價：NT$ <span id="real_total">1000</span></h5>
+                                    <label for="product_qty">選購之產品數量</label>
+                                    <input type="number" value="1" name="product_qty" id="product_qty" placeholder="選購數量" title="選購數量"/>
+                                    <h3><button type="button" class="btn btn-info" id="btn_coupon" style="display:none;">折扣代碼 Coupon Code</button></h3>
+                                </div>
+                            </div>
+                            <div class="row item">
+                                <div class="col-lg-3 col-lg-offset-3">
+                                    <div class="form-group">
+                                        <a id="back_to_shop" href="tw/article/822c7f297863df736dcfa5c03e0c5cc12b62b33e" class="btn btn-default btn-checkout">放棄並回到主頁 Go back</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="form-group">
+                                        <input type="submit" id="btn_checkout" class="btn btn-primary btn-checkout validate" value="結帳 Checkout"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>        </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content-margin">&nbsp;</div>
+<!--RWD NAV-->
+<div id="rwd_nav"></div>
+<div id="click-menu" class="overlay" role="button" aria-label="Responsive Menu Button">
+    <div class="threeLines" id="RM3Lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+</div>
+<!--RWD NAV-->
+
+<!-- Modal -->
+<div class="modal fade" id="loading_Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title" id="mySmallModalLabel">請稍候，與金流連線中...</h4>
+            </div>
+            <div class="modal-body">
+                <center><img src="dist/images/LoadingWait.gif"></center>
+            </div>
+        </div><!-- /.modal-content -->
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="coupon_Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title" >請輸入折扣代碼</h4>
+            </div>
+            <div class="modal-body">
+                <input class="form-control" name="coupon" id="input_coupon_code" placeholder="Coupon code">
+                <p style="display:none;" id="coupon_alert" class="text-danger"></p>
+                <p style="display:none;" id="coupon_success" class="text-success"></p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" id="btn_coupon_submit">送出 Submit</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="provision_Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                購物條款
+            </div>
+            <div class="modal-body">
+
+            </div>
+        </div><!-- /.modal-content -->
+    </div>
+</div>
+
+
+<script src="dist/js/checkout/jquery.twzipcode-1.7.1.min.js"></script>
+<script src="dist/js/checkout/bootstrap.min.js"></script>
+<script src="dist/js/checkout/parsley.js"></script>
+<script src="dist/js/checkout/simple.cookie.js?v=1118"></script>
+<script src="dist/js/checkout/i18n/zh_tw.js"></script>
+<script src="dist/js/checkout/date_helper.js"></script>
+<script src="dist/js/checkout/md5_helper.js"></script>
+<script src="dist/js/checkout/checkout_v1.js?v=0205"></script>
+<script src="dist/js/spin.min.js"></script>
+
+<script>
+
+    var opts = {
+        lines: 12 // The number of lines to draw
+        , length: 0 // The length of each line
+        , width: 14 // The line thickness
+        , radius: 42 // The radius of the inner circle
+        , scale: 1 // Scales overall size of the spinner
+        , corners: 1 // Corner roundness (0..1)
+        , color: '#000' // #rgb or #rrggbb or array of colors
+        , opacity: 0.25 // Opacity of the lines
+        , rotate: 0 // The rotation offset
+        , direction: 1 // 1: clockwise, -1: counterclockwise
+        , speed: 1 // Rounds per second
+        , trail: 60 // Afterglow percentage
+        , fps: 20 // Frames per second when using setTimeout() as a fallback for CSS
+        , zIndex: 2e9 // The z-index (defaults to 2000000000)
+        , className: 'spinner' // The CSS class to assign to the spinner
+        , top: '50%' // Top position relative to parent
+        , left: '50%' // Left position relative to parent
+        , shadow: true // Whether to render a shadow
+        , hwaccel: false // Whether to use hardware acceleration
+        , position: 'absolute' // Element positioning
+    };
+    var target = document.getElementById('foo');
+    var spinner = new Spinner(opts).spin(target);
+    spinner.stop(target);
+
+    $('#twzipcode').twzipcode({
+        'zipcodeSel': getCookie("zip-code"),   // 預設值為 zipcode
+        'countySel': getCookie("zip-city"),   // 預設值為 county
+        'districtSel': getCookie("zip-state"), // 預設值為 district
+
+        'onCountySelect': function () {
+
+            setCookie("zip-city", $(".zip-city").val(), 7);
+            setCookie("zip-state", $(".zip-state").val(), 7);
+            setCookie("zip-code", $(".zip-code").val(), 7);
+
+            var city = $(this).val();
+
+            if (city != "") {
+                $(".zip-city").removeClass("parsley-error").addClass("parsley-success");
+                $(".zip-state").removeClass("parsley-error").addClass("parsley-success");
+                $(".zip-code").removeClass("parsley-error").addClass("parsley-success");
+            }
+
+//        switch(city) {
+//            case "金門縣":
+//            case "連江縣":
+//            case "澎湖縣":
+//            case "南海諸島":
+//                $("#shipping_option option").remove();
+//                $("#shipping_option").append($("<option value='3'>外島配送 (3~7天到貨) 酌收外島運費 新台幣 $///每支</option>"));
+//                $("#shipping_option").append($("<option value='4'>優先出貨 (2~4天到貨) 酌收外島運費 新台幣 $///每支 與手續費 $//元</option>"));
+//
+//                $("#payment_option option").remove();
+//                $("#payment_option").append($("<option value='3'>線上刷卡</option>"));
+//                $("#payment_option").append($("<option value='1'>貨到付款 酌收手續費 + TWD $//元</option>"));
+//                $("#payment_option").append($("<option value='2'>轉帳付款</option>"));
+//                $("#region_taiwan").val("IL");
+//                break;
+//            default:
+//                $("#shipping_option option").remove();
+//                $("#shipping_option").append($("<option value='1'>一般配送 (3~5天到貨) 購物車總計低於//元時，酌收//元運費  </option>"));
+//                $("#shipping_option").append($("<option value='2'>優先出貨 (1~3天到貨) 額外酌收手續費 新台幣 $//元</option>"));
+//
+//                $("#payment_option option").remove();
+//                $("#payment_option").append($("<option value='3'>線上刷卡</option>"));
+//                $("#payment_option").append($("<option value='1'>貨到付款 酌收手續費 + 新台幣 $//元</option>"));
+//                $("#payment_option").append($("<option value='2'>轉帳付款</option>"));
+//                $("#region_taiwan").val("TW");
+//                break;
+//        }
+
+//        if(($("#payment_option").val()==2)){
+//            $("#last5_div").show();
+//            $("#last5_input").attr('required','required');
+//        }else{
+//            $("#last5_div").hide();
+//            $("#last5_input").removeAttr('required');
+//        }
+
+        }, 'onDistrictSelect': function () {
+            setCookie("zip-city", $(".zip-city").val(), 7);
+            setCookie("zip-state", $(".zip-state").val(), 7);
+            setCookie("zip-code", $(".zip-code").val(), 7);
+
+        }, 'onZipcodeKeyUp': function () {
+            setCookie("zip-city", $(".zip-city").val(), 7);
+            setCookie("zip-state", $(".zip-state").val(), 7);
+            setCookie("zip-code", $(".zip-code").val(), 7);
+
+        }
+    });
+
+    function padLeft(str, lenght) {
+        if (str.length >= lenght)
+            return str;
+        else
+            return padLeft("0" + str, lenght);
+    }
+
+    function minusItemOne(token) {
+        var qty_token = $('#qty_' + token);
+        var qty = parseInt(qty_token.val()) - 1;
+        if(qty >= 0)qty_token.val(qty);
+        update_cart();
+    }
+
+    function addItemOne(token) {
+        var qty_token = $('#qty_' + token);
+        var qty = parseInt(qty_token.val()) + 1;
+        qty_token.val(qty);
+        update_cart();
+    }
+    function update_cart(){
+        spinner.spin(target);
+        var URLs="checkout";
+        $.ajax({
+            url: URLs,
+            data: $("#cart_form").serialize(),
+            type:"POST",
+            success: function(msg){
+                console.log(msg);
+                if(msg==''){
+                    window.location.replace('');
+                }
+                $("#cart_form").html(msg);
+                spinner.stop(target);
+            },
+            error:function(xhr, ajaxOptions, thrownError){
+                console.log(xhr.status);
+                console.log(thrownError);
+            }
+        });
+    }
+
+    function set_order(){
+        spinner.spin(target);
+        var URLs="checkout";
+        $.ajax({
+            url: URLs,
+            data: $("#cart_form").serialize(),
+            type:"POST",
+            success: function(msg){
+                console.log(msg);
+                if(msg==''){
+                    window.location.replace('');
+                }
+                $("#cart_form").html(msg);
+                spinner.stop(target);
+            },
+            error:function(xhr, ajaxOptions, thrownError){
+                console.log(xhr.status);
+                console.log(thrownError);
+            }
+        });
+    }
+
+</script>
+</body>
+</html>
