@@ -8,6 +8,10 @@ body {
     overflow-x: hidden;
 }
 
+.tp-title-wrap{
+  display: none !important;
+}
+
 .bg-grey{
   background: #eee;
 }
