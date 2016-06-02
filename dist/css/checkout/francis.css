@@ -48,6 +48,17 @@ input.parsley-success, select.parsley-success, textarea.parsley-success {
     font-size: 14px;
 }
 
+.alert-info {
+    color: #333;
+    background-color: #FFEFEF;
+    border-color: #FFEFEF;
+}
+
+.alert-info span{
+  font-size: 14px;
+  font-weight: 700;
+}
+
 /* thankyou.php */
 td{
   font-size: 14px;
