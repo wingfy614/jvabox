@@ -101,13 +101,13 @@ body {
 .home .comment{
   border-bottom: 2px #CC0018 solid;
   padding-top:15px;
-  padding-bottom: 15px;
+  padding-bottom: 30px;
   position: relative;
 }
 
 .home .comment-bottom{
   position: absolute;
-  bottom: 15px;
+  bottom: 2px;
   right: 0px;
 }
 
@@ -117,6 +117,8 @@ body {
   text-decoration: underline;
   color:#999;
 }
+
+
 
 nav.nav-centered .logo {
     max-height: 84px;
@@ -168,10 +170,10 @@ h3 {
 
 .comment-top span {
     font-size: 14px;
-    line-height: 60px;
+    line-height: 45px;
     margin-left: 15px;
     display: inline-block;
-    width: 28%;
+    width: 20%;
 }
 
 .comment-top i{
@@ -181,14 +183,22 @@ h3 {
   vertical-align: text-top;
 }
 
+.comment-top-icons{
+  padding:20px 0;
+  border-bottom: #ccc 1px solid;
+  text-align: center;
+}
+
 .comment-top hr{
   margin:0;
 }
 
-.comment-top p{
+.addrs p, #weather p{
   margin-left: 15px;
-  line-height: 60px;
+  line-height: 20px;
+  padding: 15px 0;
 }
+
 
 .comment-left p{
   font-weight: 600;
@@ -291,15 +301,31 @@ h3 {
 
 /* category */
 .category-filter p{
-  margin:0;
+  margin:5px 0;
 }
-.category-filter{
-  padding-top:20px;
+.category-filter {
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+.category-filter div{
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .category-filter a{
   font-weight: normal;
   text-decoration: underline;
+}
+
+.mobile-category-filter a{
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+.mobile-category-filter div{
+  padding-left:5px;
+  padding-right:5px;
 }
 
 .category .accordion li.active .content {
@@ -320,9 +346,28 @@ h3 {
   margin:30px 0 ;
 }
 
+.accordion-1 .content .sq {
+overflow: hidden;
+height: 113px;
+}
+
+img.img-responsive {
+width: 193px;
+margin-top: 0px;
+}
+
 /* article */
 .article .accordion-1 li.active .content{
   min-height:200px;
+}
+
+.comment-left li{
+  display:inline;
+  padding:0 1px;
+}
+
+.fa-map-marker{
+  font-size:25px !important;
 }
 
 @media screen and (max-width: 1024px){
