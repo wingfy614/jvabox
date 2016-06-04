@@ -386,3 +386,23 @@ margin-top: 0px;
     margin-bottom:30px;
   }
 }
+
+/* register */
+.register{
+  width:100%;
+  margin-top: 0;
+}
+
+.image-bg{
+  height:638px;
+}
+
+.feature.bordered {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+/* member */
+.comment li{
+  display:block;
+}
