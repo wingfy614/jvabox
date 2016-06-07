@@ -403,6 +403,6 @@ margin-top: 0px;
 }
 
 /* member */
-.comment li{
+.member .comment li{
   display:block;
 }

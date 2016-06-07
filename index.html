@@ -135,6 +135,7 @@
           <li data-index="rs-6" data-transition="zoomout" data-slotamount="default"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-thumb="dist/revolution/assets/images/datcolor-60x60.jpg"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="Intro" data-description="">
             <!-- MAIN IMAGE -->
             <img src="http://uat.jvabox.com/admin/uploads/33e32cb17e9e2424183334783425a4e3c9323a30.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+
           </li>
           <!-- SLIDE  -->
           <li data-index="rs-7" data-transition="fadetotopfadefrombottom" data-slotamount="default"  data-easein="Power3.easeInOut" data-easeout="Power3.easeInOut" data-masterspeed="1500"  data-thumb="dist/revolution/assets/images/touchit-60x60.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Parallax" data-description="">
@@ -159,6 +160,7 @@
         </ul>
         <div class="tp-static-layers"></div>
         <div class="tp-bannertimer" style="height: 7px; background-color: rgba(255, 255, 255, 0.25);"></div>
+        <div style="width: 163px; height: 16px; top: 100%; transform: matrix(1, 0, 0, 1, 99, -46); left: calc(50% - 180px);" class="tp-bullets hermes horizontal nav-pos-hor-center nav-pos-ver-bottom nav-dir-horizontal noSwipe"><div style="left: 0px; top: 0px;" class="tp-bullet"></div><div style="left: 21px; top: 0px;" class="tp-bullet"></div><div style="left: 42px; top: 0px;" class="tp-bullet selected"></div><div style="left: 63px; top: 0px;" class="tp-bullet"></div><div style="left: 84px; top: 0px;" class="tp-bullet"></div><div style="left: 105px; top: 0px;" class="tp-bullet"></div><div style="left: 126px; top: 0px;" class="tp-bullet"></div><div style="left: 147px; top: 0px;" class="tp-bullet"></div></div>
       </div>
     </div><!-- END REVOLUTION SLIDER -->
 
@@ -469,6 +471,19 @@
             v_offset:20
           }
         },
+        bullets: {
+            enable: true,
+            hide_onmobile: false,
+            style: "hermes",
+            hide_onleave: false,
+            direction: "horizontal",
+            h_align: "center",
+            v_align: "bottom",
+            h_offset: 20,
+            v_offset: 30,
+            space: 5,
+            tmp: ''
+        },
         carousel: {
           horizontal_align: "center",
           vertical_align: "center",
@@ -483,10 +498,10 @@
           outof:"pause",
           visible_area:"80%"
         },
-        responsiveLevels:[1240,1024,778,480],
-        gridwidth:[1240,1024,778,480],
+        responsiveLevels:[1024,1024,778,480],
+        gridwidth:[1024,1024,778,480],
         gridheight:[400,400,400,400],
-        lazyType:"none",
+        lazyType:"smart",
         parallax: {
           type:"mouse",
           origo:"slidercenter",
@@ -504,7 +519,7 @@
         hideSliderAtLimit:0,
         hideCaptionAtLimit:0,
         hideAllCaptionAtLilmit:0,
-        debugMode:false,
+        debugMode:true,
         fallbacks: {
           simplifyAll:"off",
           nextSlideOnWindowFocus:"off",
