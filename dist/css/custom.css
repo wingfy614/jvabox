@@ -361,8 +361,8 @@ margin-top: 0px;
 }
 
 /* article */
-.article .accordion-1 li.active .content{
-  min-height:200px;
+.article .accordion-1 li.active .content {
+  min-height: 10em;
 }
 
 .comment-left li{
