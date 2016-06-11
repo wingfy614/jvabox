@@ -8,6 +8,15 @@ body {
     overflow-x: hidden;
 }
 
+.nav-utility .module{
+  padding:0 20px;
+}
+
+.user-icon i{
+  color:#cc0018;
+  font-size: 15px;
+}
+
 .tp-title-wrap{
   display: none !important;
 }
@@ -303,6 +312,25 @@ h3 {
   margin-top:15px;
 }
 
+.mobile-toptop input{
+  margin-bottom:0;
+}
+
+.mobile-toptop i{
+  font-size: 18px;
+  line-height: 50px;
+  margin-right: 5px;
+  float:right;
+}
+
+.mobile-toptop > div{
+  background: #ddd !important;
+}
+
+.mobile-toptop{
+  border-top:2px #cc0018 solid !important;
+}
+
 /* category */
 .category-filter p{
   margin:5px 0;
@@ -374,39 +402,6 @@ margin-top: 0px;
   font-size:25px !important;
 }
 
-@media screen and (max-width: 1024px){
-  .footer-1 li{
-    display: block;
-    padding-bottom:10px;
-  }
-  .fline{
-    display:none;
-  }
-  .info-footer-img, .info-footer-text{
-    margin-bottom:30px;
-  }
-}
-
-/* register */
-.register{
-  width:100%;
-  margin-top: 0;
-}
-
-.image-bg{
-  height:638px;
-}
-
-.feature.bordered {
-    margin-top: 80px;
-    margin-bottom: 80px;
-}
-
-/* member */
-.member .comment li{
-  display:block;
-}
-
 div.stars {
   width: 180px;
   display: inline-block;
@@ -440,4 +435,113 @@ label.star:hover { transform: rotate(-15deg) scale(1.3); }
 label.star:before {
   content: '\f006';
   font-family: FontAwesome;
+}
+
+@media screen and (max-width: 1024px){
+  .footer-1 li{
+    display: block;
+    padding-bottom:10px;
+  }
+  .fline{
+    display:none;
+  }
+  .info-footer-img, .info-footer-text{
+    margin-bottom:30px;
+  }
+
+}
+
+/* register */
+.register{
+  width:100%;
+  margin-top: 0;
+}
+
+.image-bg{
+  height:700px;
+}
+
+.feature.bordered {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+@media screen and (max-width: 1000px){
+  .feature.bordered {
+    margin-top: 0;
+
+  }
+}
+
+/* member */
+.member .comment li{
+  display:block;
+}
+
+.member h5{
+  margin-bottom: 0;
+}
+
+
+
+/* contact */
+
+.contact h3{
+  margin-left:15px;
+
+}
+
+/* favourites */
+.favourites h3{
+  margin-left:15px;
+}
+
+.favourites .bg-grey{
+  padding-top:15px;
+}
+
+.favourites .bg-grey a{
+  line-height: 45px;
+  font-size: 16px;
+}
+
+.favourites .pagination{
+  margin: 30px 0;
+}
+
+.favourites .btn-lg{
+  width: 100%;
+}
+
+/* no-favourites */
+.no-favourites .bg-grey{
+  padding-top:15px;
+  margin-bottom: 30px;
+  border-bottom: 2px #cc0018 solid;
+}
+
+.no-favourites .bg-grey a{
+  line-height: 45px;
+  font-size: 16px;
+}
+
+.no-favourites h3{
+  margin-left: 15px;
+}
+
+.no-favourites .pagination{
+  margin: 30px 0;
+}
+
+/* search-result */
+.search-result .col-sm-2{
+  margin-bottom: 30px;
+}
+
+.search-result .col-sm-10{
+  margin-bottom: 30px;
+}
+
+.search-result .pagination{
+  margin:30px 0;
 }

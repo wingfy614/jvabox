@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>旅遊盒子</title>
-    <link rel="shortcut icon" href="dist/images/tourbox-ico.png" type="image/jpeg"/>    
+    <link rel="shortcut icon" href="dist/images/tourbox-ico.png" type="image/jpeg"/>
     <link rel="apple-touch-icon" href="dist/images/tourbox-ico.png" type="image/jpeg"/>
     <meta name="viewport" content="width=device-width, initial-scale=0.9">
     <link href="dist/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
@@ -30,6 +30,8 @@
     <script type="text/javascript" src="dist/revolution/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>
 </head>
 <body>
+
+
 <div class="nav-container">
     <a id="top"></a>
     <nav class="nav-centered">
@@ -62,10 +64,19 @@
                         </li>
                     </ul>
                 </div> -->
-                <div class="col-sm-5">
+                <a href=""><div class="user-icon col-sm-1 col-xs-1 hidden-sm hidden-md hidden-lg">
+                  <i class="fa fa-user"></i>
+                </div></a>
+                <div class="col-sm-5 col-xs-10">
+
                     <input placeholder="搜尋..." type="text">
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-3 hidden-xs">
+                    <a class="btn btn-sm" href=""
+                       data-toggle="modal" data-target="#member_login"                                >
+                        會員註冊                            </a>
+                </div>
+                <div class="col-sm-3 hidden-xs">
                     <a class="btn btn-sm" href=""
                        data-toggle="modal" data-target="#member_login"                                >
                         會員登入                            </a>
